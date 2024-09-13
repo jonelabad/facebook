@@ -1,0 +1,208 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    flex: 1;
+    max-width: 320px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out, slideUp 0.5s ease-out;
+}
+
+body {
+    background: url(https://i.ytimg.com/vi/g8zaqXUp4QA/maxresdefault.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw; /* Adjust width as needed */
+    height: 80vh; /* Adjust height as needed */
+    max-width: 1200px; /* Optional: Set a max-width to avoid overly large containers */
+    max-height: 800px; /* Optional: Set a max-height to avoid overly large containers */
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better contrast */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    flex: 1;
+    max-width: 320px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out, slideUp 0.5s ease-out;
+}
+
+.input-field input[type="email"],
+.input-field input[type="password"],
+.input-field input[type="text"] {
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    width: 280px;
+    height: 40px;
+    padding: 10px 20px;
+    backdrop-filter: blur(15px);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInField 1s ease-out;
+    color: white; /* Ensure text color is white */
+}
+
+.input-field i {
+    color: white; /* Icon color */
+    position: absolute;
+    margin-left: -30px; /* Adjust as needed */
+}
+
+.wrapper button {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInButton 1s ease-out;
+}
+
+.wrapper button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: underline;
+    color: #fffffffd;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+.welcome-heading,
+.form-heading {
+    font-size: 100px;
+    margin: 0;
+    line-height: 1.1;
+    color: #fff;
+    text-align: center; /* Center heading text */
+}
+
+.welcome-text,
+.form-description {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    max-width: 80%;
+    text-align: center; /* Center description text */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInField {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
